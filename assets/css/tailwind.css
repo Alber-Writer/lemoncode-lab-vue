@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .create-task{
+    @apply bg-green-500 text-cyan-300
+  }
+}

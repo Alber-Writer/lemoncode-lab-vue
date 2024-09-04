@@ -5,5 +5,5 @@ defineProps<{
 </script>
 
 <template>
-  <UnaPrueba></UnaPrueba>
+  <TheTask></TheTask>
 </template>

@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  Soy un compo
+  Soy una task
 </template>
