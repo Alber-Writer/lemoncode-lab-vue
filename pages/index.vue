@@ -5,5 +5,5 @@ defineProps<{
 </script>
 
 <template>
-  <TheTask></TheTask>
+  <TaskList></TaskList>
 </template>
