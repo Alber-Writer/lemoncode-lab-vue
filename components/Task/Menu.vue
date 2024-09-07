@@ -1,13 +1,13 @@
 <script setup lang="ts">
-const props = defineProps<{ enableEditMode: boolean }>();
+const props = defineProps<{ isEditableMode: boolean }>();
 
 const emit = defineEmits(['emit-edit-mode'])
 
 const isMenuActive = ref<boolean>(false);
 
 const toggleMenu = (prevState: boolean) => {
+  if (isMenuActive.value && props.isEditableMode) emit('emit-edit-mode', false);
   isMenuActive.value = !prevState;
-  if (!isMenuActive.value) emit('emit-edit-mode', props.enableEditMode);
 };
 </script>
 
@@ -16,10 +16,10 @@ const toggleMenu = (prevState: boolean) => {
     <button
       v-if="isMenuActive"
       class="bg-secondary hover:bg-primary menu-button"
-      :class="{ [`bg-terciary`]: enableEditMode }"
+      :class="{ [`bg-terciary`]: isEditableMode }"
       aria-roledescription="Button to edit task content"
       title="Edit task content"
-      @click="emit('emit-edit-mode', enableEditMode)"
+      @click="emit('emit-edit-mode', true)"
     >
       <img src="@/public/edit_pen.svg" alt="Edit task" />
     </button>

@@ -15,7 +15,7 @@ const emit = defineEmits(['emit-edit-mode'])
       class="bg-rose-700 hover:bg-rose-500 menu-button min-w-fit px-4"
       aria-roledescription="Discard Changes"
       title="Discard Changes"
-      @click="emit('emit-edit-mode', true)"
+      @click="emit('emit-edit-mode', false)"
     >
       Discard
     </button>
