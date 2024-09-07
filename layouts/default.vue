@@ -5,7 +5,7 @@
   <main
     class="flex h-[100dvh] w-[100dvw] flex-col overflow-y-auto items-center"
   >
-    <header class="bg-primary py-4 px-6 w-full max-h-[80px] flex content-center items-center gap-4">
+    <header class="bg-primary py-4 px-6 w-full max-h-[80px] flex content-center items-center gap-4 border-b-2 border-secondary">
         <img src="@/public/logo.svg" alt="Task App logo" />
         <img src="@/public/logo-name.svg" alt="Vue Lab Tasks Manager App" />
     </header>
