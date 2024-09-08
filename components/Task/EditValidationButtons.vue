@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const emit = defineEmits(['emit-edit-mode'])
+const emit = defineEmits(['set-edit-mode', 'update-task'])
 </script>
 
 <template>
@@ -8,6 +8,7 @@ const emit = defineEmits(['emit-edit-mode'])
       class="bg-primary hover:bg-secondary menu-button min-w-fit px-4"
       aria-roledescription="Save changes"
       title="Save changes"
+      @click="emit('update-task', true), emit('set-edit-mode', false)"
     >
       Save
     </button>
@@ -15,7 +16,7 @@ const emit = defineEmits(['emit-edit-mode'])
       class="bg-rose-700 hover:bg-rose-500 menu-button min-w-fit px-4"
       aria-roledescription="Discard Changes"
       title="Discard Changes"
-      @click="emit('emit-edit-mode', false)"
+      @click="emit('set-edit-mode', false)"
     >
       Discard
     </button>
