@@ -29,10 +29,10 @@ const setAsDeleted = ()=> manageTask.deleteTask(props.taskId)
 </script>
 
 <template>
-  <article class="w-full px-3 py-2">
-    <form @submit.prevent>
+  <article :id="taskId" class="w-full px-3 py-2 flex">
+    <form class="w-full" @submit.prevent > 
       <div
-        class="flex text-dark justify-between p-2 pb-3 text-sm font-sans border-b-2 rounded-md gap-4 items-top content-center"
+        class="flex text-dark justify-between p-2 pb-3 w-full text-sm font-sans border-b-2 rounded-md gap-4 items-top content-center"
       >
         <!-- Task Checkbox -->
         <input
@@ -56,7 +56,7 @@ const setAsDeleted = ()=> manageTask.deleteTask(props.taskId)
         <!-- Editmode -->
         <div
           v-if="isEditableMode"
-          class="flex max-w-[300px] gap-2 flex-wrap content-start items-start justify-start"
+          class="flex basis-[100%] gap-2 flex-wrap content-start items-start justify-start"
         >
           <TaskEditContent
             :task-content="taskContent"
