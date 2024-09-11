@@ -1,75 +1,25 @@
-# Nuxt 3 Minimal Starter
+# ✅ Lemoncode Vue Lab : ToDo App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### Description
+In this lab, I have developed a task manager app based on VUE+Nuxt framework. It includes persistent states managed with Pinia and its plugin PersistedState.
 
-## Setup
+### Technologies Used
+- Front End Framework: Vue 3 + Nuxt
+- State management: Pinia
+- Styles: Tailwind CSS
 
-Make sure to install the dependencies:
+Features
+- Custom UI: Mockup made in Figma from scratch
 
-```bash
-# npm
-npm install
+## Run commands
+I recommend using the **pnpm** package manager in this project
 
-# pnpm
+Install dependencies:
+```Bash
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+Start development server:
+```Bash
+pnpm dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
