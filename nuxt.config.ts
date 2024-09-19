@@ -7,4 +7,5 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
   ],
+  app: { baseURL: "/lemoncode-lab-vue/" },
 });
